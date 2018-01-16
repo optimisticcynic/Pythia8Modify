@@ -372,6 +372,10 @@ class Event {
 
 public:
 
+    
+  vector<double> TuningScaleCollection;
+  vector<double> TuningmHatDampCollection;//This is sqrt(s)/(sqrt(s)+ydamp*halfMassForKT)
+  vector<double> TuningGaussPtVector;// the gauss values added in quatiture that is multiplied by the width to get Px and py
   // Constructors.
   Event(int capacity = 100) : startColTag(100), maxColTag(100),
     savedSize(0), savedJunctionSize(0), savedPartonLevelSize(0),
@@ -577,6 +581,8 @@ private:
 
   // The scale of the event; linear quantity in GeV.
   double scaleSave, scaleSecondSave;
+  
+
 
   // Header specification in event listing (at most 40 characters wide).
   string headerList;

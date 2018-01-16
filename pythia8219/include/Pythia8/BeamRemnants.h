@@ -69,7 +69,6 @@ private:
 
   // Colour collapses (when one colour is mapped onto another).
   vector<int> colFrom, colTo;
-
   // Pointer to various information on the generation.
   Info*          infoPtr;
 
